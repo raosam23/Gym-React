@@ -13,7 +13,7 @@ export default function GymAddress() {
   return (
     <div className="text-center mt-0" style={addressStyle}>
       <h3 style={{ marginBottom: '1rem' }}>Gym Address</h3>
-      <p style={{ marginBottom: '1rem' }}>123 Shakti Kendra <br /> Koramangala <br /> Bengaluru - 560034</p>
+      <p style={{ marginBottom: '1rem' }}>No. 123, "DynamicFit", Shakti Kendra <br /> Koramangala <br /> Bengaluru - 560034</p>
     </div>
   );
 }

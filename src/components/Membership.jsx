@@ -1,10 +1,14 @@
 import React from 'react';
 import MemberCard from './Membercard';
+import Navbar from './Navbar';
 
 
-function Membership() {
+function Membership(props) {
+  const {isLogged, isAdmin} = props
   return (
     <>
+  <Navbar isLogged = {isLogged} isAdmin = {isAdmin} />
+
       <MemberCard
         title="Basic Membership"
         description="Achieve Your Fitness Goals, One Step at a Time!"

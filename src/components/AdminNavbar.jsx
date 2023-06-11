@@ -43,7 +43,7 @@ function Navbar(props) {
             </li>
             {!isLogged && (
               <li className="nav-item" style={LoggedIn}>
-                <Link className="nav-link" to="/login">
+                <Link className="nav-link" to="/log">
                   Login
                 </Link>
               </li>

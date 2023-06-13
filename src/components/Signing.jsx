@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Signing = () => {
   const buttonStyle = {
@@ -63,6 +64,10 @@ const Signing = () => {
             <br />
             <input type="number" id="userAge" />
             <br />
+            <label htmlFor='userSex'>Sex:</label>
+            <br />
+            <input type="text" id="userSex" />
+            <br />
             <label htmlFor="userEmail">Email:</label>
             <br />
             <input type="email" id="userEmail" />
@@ -89,6 +94,10 @@ const Signing = () => {
             <br />
             <input type="number" id="adminAge" />
             <br />
+            <label htmlFor='userSex'>Sex:</label>
+            <br />
+            <input type="text" id="userSex" />
+            <br />
             <label htmlFor="adminEmail">Email:</label>
             <br />
             <input type="email" id="adminEmail" />
@@ -102,9 +111,12 @@ const Signing = () => {
             </button>
         </form>
         )}
-        <form action="/" method="get">
-          <button type="submit" className="btn btn-primary" style={buttonStyle}>Home</button>
-        </form>
+        <br /><br />
+        <Link to="/">
+          <button className="btn btn-primary" style={buttonStyle}>
+            Home
+          </button>
+        </Link>
       </div>
     </div>
   );

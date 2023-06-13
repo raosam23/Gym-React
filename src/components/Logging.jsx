@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Logging = () => {
   const buttonStyle = {
@@ -78,9 +79,12 @@ const Logging = () => {
             </button>
           </form>
         )}
-        <form action="/" method="get">
-          <button type="submit" className="btn btn-primary" style={buttonStyle}>Home</button>
-        </form>
+        <br /><br />
+        <Link to="/">
+          <button className="btn btn-primary" style={buttonStyle}>
+            Home
+          </button>
+        </Link>
       </div>
     </div>
     );

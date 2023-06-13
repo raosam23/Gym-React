@@ -38,23 +38,18 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Classes
+                Personal Trainers
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Trainers
+                Shop
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact Us
-              </a>
+              <Link className="nav-link" to="/aboutUs">
+                About Us
+              </Link>
             </li>
             {!isLogged && (
               <li className="nav-item" style={LoggedIn}>

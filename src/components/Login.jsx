@@ -43,6 +43,12 @@ export default function LoginPage() {
             Log In
           </button>
         </Link>
+        <br /><br />
+        <Link to="/">
+          <button className="btn btn-primary" style={buttonStyle}>
+            Home
+          </button>
+        </Link>
       </div>
     </div>
   );

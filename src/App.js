@@ -6,18 +6,20 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Logging from "./components/Logging";
 import Signing from "./components/Signing";
+import AboutUs from './components/AboutUs';
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(true)
   const [isLogged, setIsLogged] = useState(false)
   return (
     <BrowserRouter>
       <div className="App">
         
         <Routes>
-          <Route path="/" element={<Home isLogged = {isLogged} isAdmin = {isAdmin}/>} />
-          <Route path="/membership" element={<Membership isLogged = {isLogged} isAdmin = {isAdmin} />} />
-          <Route path='/log' element={<Login />} />
+          <Route exact path="/" element={<Home isLogged = {isLogged} isAdmin = {isAdmin}/>} />
+          <Route exact path="/membership" element={<Membership isLogged = {isLogged} isAdmin = {isAdmin} />} />
+          <Route exact path='/aboutUs' element={<AboutUs />}/>
+          <Route exact path='/log' element={<Login />} />
           <Route exact path="/login" element={<Logging />} />
           <Route exact path="/signup" element={<Signing />} />
         </Routes>

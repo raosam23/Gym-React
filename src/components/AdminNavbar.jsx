@@ -32,14 +32,14 @@ function Navbar(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
-                Set Trainer
+              <Link className="nav-link" to="/addTrainer">
+                Add Trainer
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Add Items
-              </a>
+              <Link className="nav-link" to="/addProducts">
+                Add Products
+              </Link>
             </li>
             {!isLogged && (
               <li className="nav-item" style={LoggedIn}>

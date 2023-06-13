@@ -7,6 +7,8 @@ import Login from './components/Login';
 import Logging from "./components/Logging";
 import Signing from "./components/Signing";
 import AboutUs from './components/AboutUs';
+import SetTrainer from './components/SetTrainer';
+import AddProducts from './components/AddProducts';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(true)
@@ -19,6 +21,8 @@ function App() {
           <Route exact path="/" element={<Home isLogged = {isLogged} isAdmin = {isAdmin}/>} />
           <Route exact path="/membership" element={<Membership isLogged = {isLogged} isAdmin = {isAdmin} />} />
           <Route exact path='/aboutUs' element={<AboutUs />}/>
+          <Route exact path="/addTrainer" element={<SetTrainer />} />
+          <Route exact path='/addProducts' element={<AddProducts />}/>
           <Route exact path='/log' element={<Login />} />
           <Route exact path="/login" element={<Logging />} />
           <Route exact path="/signup" element={<Signing />} />

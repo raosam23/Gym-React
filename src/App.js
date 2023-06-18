@@ -11,7 +11,7 @@ import SetTrainer from './components/SetTrainer';
 import AddProducts from './components/AddProducts';
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(true)
+  const [isAdmin, setIsAdmin] = useState(false)
   const [isLogged, setIsLogged] = useState(false)
   return (
     <BrowserRouter>

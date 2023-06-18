@@ -42,9 +42,9 @@ const Signing = () => {
   return (
     <div style={pageStyle}>
       <div style={containerStyle}>
-        <h2 style={headingStyle}>Welcome to our website!</h2>
-        {/* <p>Please select an option:</p>
-        <button className="btn btn-primary" style={buttonStyle} onClick={handleSwitch}>
+        <h2 style={headingStyle}>Welcome to DynamicFit!</h2>
+         <p>Please select an option:</p>
+        {/*<button className="btn btn-primary" style={buttonStyle} onClick={handleSwitch}>
           {isUserLogin ? 'Switch to Admin account' : 'Switch to User account'}
         </button> */}
 
@@ -76,6 +76,7 @@ const Signing = () => {
             <br />
             <input type="password" id="userPassword" />
             <br />
+            <br />
             <button className="btn btn-primary" style={buttonStyle} type="submit">
               Sign up
             </button>
@@ -106,12 +107,13 @@ const Signing = () => {
             <br />
             <input type="password" id="adminPassword" />
             <br />
+            <br />
             <button className="btn btn-primary" style={buttonStyle} type="submit">
               Sign up
             </button>
         </form>
         )}
-        <br /><br />
+        <br />
         <Link to="/">
           <button className="btn btn-primary" style={buttonStyle}>
             Home

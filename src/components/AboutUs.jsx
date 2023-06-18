@@ -10,6 +10,7 @@ function AboutUs() {
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
+    backgroundColor: '#f2f2f2', // Add the desired background color here
   };
 
   const headingStyle = {
@@ -28,13 +29,13 @@ function AboutUs() {
       <Navbar />
       <div style={containerStyle}>
         <h2 style={headingStyle}>About Us</h2>
-        <br /><br /><br />
+        <br /><br />
         <h3>Welcome to DynamicFit!</h3>
         <p style={textStyle}>
           At DynamicFit, we believe in empowering individuals to achieve their fitness goals and lead a healthy lifestyle. Our web app is designed to provide you with a comprehensive fitness experience, combining convenience, personalized guidance, and a supportive community.
         </p>
-        <h3>Our History</h3>
         <br /><br />
+        <h3>Our History</h3>
         <p style={textStyle}>
           DynamicFit was established in 1967 with a passion for revolutionizing the fitness industry. Since then, we have been dedicated to helping our members transform their lives through exercise and wellness.
         </p>

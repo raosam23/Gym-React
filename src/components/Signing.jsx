@@ -43,10 +43,10 @@ const Signing = () => {
     <div style={pageStyle}>
       <div style={containerStyle}>
         <h2 style={headingStyle}>Welcome to our website!</h2>
-        <p>Please select an option:</p>
+        {/* <p>Please select an option:</p>
         <button className="btn btn-primary" style={buttonStyle} onClick={handleSwitch}>
           {isUserLogin ? 'Switch to Admin account' : 'Switch to User account'}
-        </button>
+        </button> */}
 
         <br /><br />
 
